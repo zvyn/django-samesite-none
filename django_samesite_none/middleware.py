@@ -24,5 +24,6 @@ class SameSiteNoneMiddleware:
             for name, value in response.cookies.items():
                 if not value.get("samesite"):
                     value["samesite"] = "None"
+                    value["secure"] = True  # fixes plain set_cookie(name, value)
 
         return response
