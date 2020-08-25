@@ -5,7 +5,7 @@ with open("README.md") as f:
 
 setup(
     name="django-samesite-none",
-    version="0.0.2",
+    version="0.0.3",
     description="Django middleware which sets SameSite flag to 'None' for cookies where it is None",
     long_description=readme,
     long_description_content_type="text/markdown",

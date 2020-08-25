@@ -4,6 +4,7 @@ Chrome started rolling out changes that brake Django sites with intentionally
 empty `SameSite` cookie settings.
 
 This middleware sets the value `"None"` on those cookies explicitly.
+Also sets `Secure` to `True` for all altered cookies.
 
 # Installation
 
